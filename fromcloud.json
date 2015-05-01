@@ -1,0 +1,22 @@
+//From Amazon LaunchRequest
+
+{ version: '1.0',
+  session: 
+   { new: true,
+     sessionId: 'amzn1.echo-api.session.db7baf45-8d2e-4089-b212-89beda472808',
+     user: { userId: 'amzn1.account.AHBLH447NR5AWYYH74SW7ECWYMHA' } },
+  request: 
+   { type: 'LaunchRequest',
+     requestId: 'amzn1.echo-api.request.88e16b90-3307-45b4-97e5-b0d26f7d9793' } }
+
+
+
+  //From Amazon IntentRequest
+     { type: 'IntentRequest',
+     requestId: 'amzn1.echo-api.request.914a3a60-08da-4369-ad3c-84c0def233db',
+     intent: 
+      { name: 'sample',
+        slots: 
+         { word: { name: 'word', value: 'gary' },
+           Date: { name: 'Date' } } } } }
+{"version":"1.0","response":{"outputSpeech":{"type":"PlainText","text":"The word I heard was gary"},"card":{"type":"Simple","title":"Sample","subtitle":"Spring 23","content":"The word I heard was gary"},"shouldEndSession":"false"}}

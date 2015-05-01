@@ -49,11 +49,11 @@ https.createServer(options, function(req, res) {
         req.on('end', function() {
             if (jsonString.length > 0) {
                 message = JSON.parse(jsonString);
-                console.log(message);
+                console.dir(message,{depth: 5});
                 //console.log("type",message.request.type);
                 if (message.request.type == "IntentRequest") {
                     if (!message.request.intent.slots.word.value) {
-                        myanswer = "Say somthing like the  word is thank friday";
+                        myanswer = "Say somthing like the  word is friday";
                     } else {
                         //console.log("word",message.request.intent.word);
                         //console.log("slots",message.request.intent.slots.word.value);
